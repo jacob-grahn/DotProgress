@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dot Progress</title>
+</head>
+<body>
+
+<canvas id="testCanvas" width="500" height="500"></canvas>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="http://code.createjs.com/createjs-2013.05.14.min.js"></script>
+
+<!-- build:js scripts/scripts.js -->
+<script src="scripts/dotProgress/Dot.js"></script>
+<script src="scripts/dotProgress/Dots.js"></script>
+<script src="scripts/dotProgress/DotProgress.js"></script>
+<script src="scripts/three/Field.js"></script>
+<script src="scripts/three/IParticle.js"></script>
+<script src="scripts/utils/misc.js"></script>
+<!-- endbuild -->
+
+<script>
+	$(document).ready( function() {
+		var preloadDots = new dotProgress.DotProgress( 'testCanvas', {} );
+	})
+</script>
+
+</body>
+</html>
