@@ -3,11 +3,8 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/app/scripts/dotProgress/DotProgress.js" />
-        <item url="file://$PROJECT_DIR$/app/scripts/three/IParticle.js" />
-        <item url="file://$PROJECT_DIR$/app/scripts/three/Field.js" />
-        <item url="file://$PROJECT_DIR$/app/scripts/dotProgress/Dots.js" />
         <item url="file://$PROJECT_DIR$/app/scripts/dotProgress/Dot.js" />
-        <item url="file://$PROJECT_DIR$/app/scripts/dotProgress/IDotProgressOptions.js" />
+        <item url="file://$PROJECT_DIR$/app/scripts/dotProgress/Dots.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
@@ -39,12 +36,14 @@
       <root url="file://$PROJECT_DIR$/app/scripts/dotProgress/IFancyProgressOptions.js" />
       <root url="file://$PROJECT_DIR$/app/scripts/utils/misc.js" />
       <root url="file://$PROJECT_DIR$/app/scripts/dotProgress/FancyProgress.js" />
-      <root url="file://$PROJECT_DIR$/app/scripts/dotProgress/DotProgress.js" />
       <root url="file://$PROJECT_DIR$/app/scripts/three/IParticle.js" />
-      <root url="file://$PROJECT_DIR$/app/scripts/three/Field.js" />
-      <root url="file://$PROJECT_DIR$/app/scripts/dotProgress/Dots.js" />
-      <root url="file://$PROJECT_DIR$/app/scripts/dotProgress/Dot.js" />
+      <root url="file://$PROJECT_DIR$/app/scripts/utils/misc.js" />
+      <root url="file://$PROJECT_DIR$/define/jquery/jquery-tests.js" />
       <root url="file://$PROJECT_DIR$/app/scripts/dotProgress/IDotProgressOptions.js" />
+      <root url="file://$PROJECT_DIR$/app/scripts/DotProgress.js" />
+      <root url="file://$PROJECT_DIR$/app/scripts/Field.js" />
+      <root url="file://$PROJECT_DIR$/app/scripts/Dot.js" />
+      <root url="file://$PROJECT_DIR$/app/scripts/Dots.js" />
     </CLASSES>
     <SOURCES />
   </library>

@@ -3725,7 +3725,7 @@
 
   }); // module: chai/utils/overwriteProperty.js
 
-  require.register("chai/utils/test.js", function(module, exports, require){
+  require.register("chai/utils/utils.js", function(module, exports, require){
     /*!
      * Chai - test utility
      * Copyright(c) 2012 Jake Luer <jake@alogicalparadox.com>
@@ -3753,7 +3753,7 @@
       return negate ? !expr : expr;
     };
 
-  }); // module: chai/utils/test.js
+  }); // module: chai/utils/utils.js
 
   require.register("chai/utils/transferFlags.js", function(module, exports, require){
     /*!
