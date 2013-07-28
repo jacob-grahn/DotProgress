@@ -2,51 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f52372b0-8a0e-4f6c-bd44-5de76b175239" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/Dot.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/DotProgress.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/Dots.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/Field.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\app\scripts\dotProgress\Dot.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\app\scripts\dotProgress\Dot.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\app\scripts\dotProgress\Dot.ts" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\app\scripts\dotProgress\DotProgress.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\app\scripts\dotProgress\DotProgress.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\app\scripts\dotProgress\DotProgress.ts" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\app\scripts\dotProgress\Dots.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\app\scripts\dotProgress\Dots.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\app\scripts\dotProgress\Dots.ts" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\app\scripts\dotProgress\IDotProgressOptions.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\app\scripts\dotProgress\IDotProgressOptions.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\app\scripts\dotProgress\IDotProgressOptions.ts" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\app\scripts\three\Field.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\app\scripts\three\Field.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\app\scripts\three\Field.ts" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\app\scripts\three\IParticle.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\app\scripts\three\IParticle.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\app\scripts\three\IParticle.ts" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\app\scripts\utils\misc.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\app\scripts\utils\misc.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\app\scripts\utils\misc.ts" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\define\createjs\LoadQueueEvent.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\define\createjs\easeljs.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\define\createjs\preloadjs.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\define\createjs\tweenjs.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\define\jquery\jquery-tests.ts" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\define\jquery\jquery.d.ts" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/DotController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/DotModel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/DotView.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/DotViewTest.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/karma.conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/webResources.xml" />
+      <change type="DELETED" beforePath="C:\Projects\DotProgress\app\scripts\Field.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\DotProgress\test\lib\chai.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\DotProgress\test\lib\expect.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\DotProgress\test\lib\mocha\mocha.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\DotProgress\test\lib\mocha\mocha.js" afterPath="" />
+      <change type="MOVED" beforePath="C:\Projects\DotProgress\test\spec\test.js" afterPath="$PROJECT_DIR$/test/unit/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/Dot.js" afterPath="$PROJECT_DIR$/app/scripts/Dot.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/DotProgress.js" afterPath="$PROJECT_DIR$/app/scripts/DotProgress.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/Dots.js" afterPath="$PROJECT_DIR$/app/scripts/Dots.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/PreloadDots.iml" afterPath="$PROJECT_DIR$/.idea/PreloadDots.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/lib/chai.js" afterPath="$PROJECT_DIR$/test/lib/chai.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/lib/mocha/mocha.js" afterPath="$PROJECT_DIR$/test/lib/mocha/mocha.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/utils.js" afterPath="$PROJECT_DIR$/app/scripts/utils.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PreloadDots.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/a.dummy" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1373096379634" ignored="false" />
     <file path="/PreloadDots.ts" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1373097517774" ignored="false" />
-    <file path="/index.html" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374271883079" ignored="false" />
+    <file path="/index.html" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374706756888" ignored="false" />
     <file path="/PreloaderDots.ts" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1373181135254" ignored="false" />
     <file path="/Dots.ts" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374271987344" ignored="false" />
     <file path="/Dot.ts" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374270452608" ignored="false" />
@@ -70,7 +56,7 @@
     <file path="/Field.ts" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374270533018" ignored="false" />
     <file path="/IDotProgressOptions.ts" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374270806704" ignored="false" />
     <file path="/DotProgress.ts" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374270871336" ignored="false" />
-    <file path="/Dot.js" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374689282392" ignored="false" />
+    <file path="/Dot.js" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374906617485" ignored="false" />
     <file path="/test.js" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374516189943" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/grunt/node_modules/glob/test/bash-results.json" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374689567633" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/grunt-svgmin/node_modules/svgo/node_modules/node.extend/node_modules/object-keys/node_modules/foreach/package.json" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374689567633" ignored="false" />
@@ -116,9 +102,16 @@
     <file path="$PROJECT_DIR$/node_modules/grunt-contrib-compass/node_modules/grunt-lib-contrib/node_modules/zlib-browserify/package.json" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374689567634" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/grunt-mocha/node_modules/mocha/mocha.js" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374689567634" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/grunt-lib-contrib/node_modules/zlib-browserify/package.json" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374689567634" ignored="false" />
-    <file path="/Dummy.txt" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374689751468" ignored="false" />
-    <file path="/DotProgress.js" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374704869802" ignored="false" />
-    <file path="/Dots.js" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374705181603" ignored="false" />
+    <file path="/Dummy.txt" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374904697494" ignored="false" />
+    <file path="/DotProgress.js" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374723098563" ignored="false" />
+    <file path="/Dots.js" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374723804934" ignored="false" />
+    <file path="/utils.js" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374789912691" ignored="false" />
+    <file path="/DotController.js" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374791043571" ignored="false" />
+    <file path="/DotModel.js" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374812094695" ignored="false" />
+    <file path="/Field.js" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374789468511" ignored="false" />
+    <file path="/DotView.js" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374908007427" ignored="false" />
+    <file path="/DotViewSpec.js" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374875506192" ignored="false" />
+    <file path="/DotViewTest.js" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374908442170" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,47 +131,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="karma.conf.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/karma.conf.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="21" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Dot.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/Dot.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="2" selection-start="319" selection-end="319" vertical-scroll-proportion="0.0">
+            <state line="10" column="12" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dots.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/Dots.js">
+      <file leaf-file-name="DotView.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/DotView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="2" selection-start="1105" selection-end="1105" vertical-scroll-proportion="0.0">
+            <state line="32" column="5" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/index.html">
+      <file leaf-file-name="DotViewTest.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/unit/DotViewTest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="28" selection-start="330" selection-end="330" vertical-scroll-proportion="0.24256837">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DotProgress.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/DotProgress.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="914" selection-end="914" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utils.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/utils.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="2" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="50" column="38" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.83497053">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -201,22 +187,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/scripts/three/IParticle.ts" />
-        <option value="$PROJECT_DIR$/app/scripts/preloader/Dot.ts" />
-        <option value="$PROJECT_DIR$/app/scripts/preloader/Dots.ts" />
-        <option value="$PROJECT_DIR$/app/scripts/preloader/FancyProgress.ts" />
-        <option value="$PROJECT_DIR$/app/scripts/preloader/IFancyProgressOptions.ts" />
-        <option value="$PROJECT_DIR$/app/scripts/three/Field.ts" />
-        <option value="$PROJECT_DIR$/app/scripts/dotProgress/IFancyProgressOptions.js.map" />
-        <option value="$PROJECT_DIR$/app/scripts/dotProgress/IDotProgressOptions.ts" />
-        <option value="$PROJECT_DIR$/app/scripts/dotProgress/Dots.ts" />
-        <option value="$PROJECT_DIR$/app/scripts/dotProgress/DotProgress.ts" />
-        <option value="$PROJECT_DIR$/app/scripts/utils/test.js" />
-        <option value="$PROJECT_DIR$/app/scripts/dotProgress/Dot.js" />
-        <option value="$PROJECT_DIR$/app/scripts/three/Field.js" />
-        <option value="$PROJECT_DIR$/app/scripts/dotProgress/DotProgress.js" />
-        <option value="$PROJECT_DIR$/app/scripts/dotProgress/Dots.js" />
-        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/scripts/Dots.js" />
+        <option value="$PROJECT_DIR$/app/scripts/DotProgress.js" />
+        <option value="$PROJECT_DIR$/app/scripts/Field.js" />
+        <option value="$PROJECT_DIR$/app/scripts/DotModel.js" />
+        <option value="$PROJECT_DIR$/test/spec/test.js" />
+        <option value="C:/Program Files (x86)/Console2/console.xml" />
+        <option value="$PROJECT_DIR$/node_modules/grunt-karma/node_modules/karma/lib/launchers/Chrome.js" />
+        <option value="$USER_HOME$/AppData/Roaming/npm/node_modules/karma/lib/launchers/Chrome.js" />
+        <option value="$PROJECT_DIR$/test/spec/DotViewSpec.js" />
+        <option value="$PROJECT_DIR$/karma.conf.js" />
+        <option value="$PROJECT_DIR$/test/unit/DotViewSpec.js" />
+        <option value="$PROJECT_DIR$/app/scripts/DotController.js" />
+        <option value="$PROJECT_DIR$/app/scripts/utils.js" />
+        <option value="$PROJECT_DIR$/app/scripts/Dot.js" />
+        <option value="$PROJECT_DIR$/app/scripts/DotView.js" />
+        <option value="$PROJECT_DIR$/test/unit/DotViewTest.js" />
       </list>
     </option>
   </component>
@@ -234,12 +220,12 @@
             <id />
           </State>
           <State>
-            <id>File Watchers</id>
+            <id>General</id>
           </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>TaskProblemsInspection</id>
+            <id>Annotator</id>
           </State>
         </selected-state>
       </profile-state>
@@ -271,7 +257,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -300,25 +285,58 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PreloadDots" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DotProgress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PreloadDots" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DotProgress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="IntelliLang.Configuration" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="restartRequiresConfirmation" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -351,6 +369,13 @@
       <option name="filePath" />
       <option name="scope" value="ALL" />
       <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="CHROME" />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
@@ -401,17 +426,17 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32875368" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13645834" sideWeight="0.85536397" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2914622" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13645834" sideWeight="0.70881224" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29118773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973504" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14463602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973504" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14463602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32875368" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -483,108 +508,101 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="20" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/spec/test.js">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="275" selection-end="275" vertical-scroll-proportion="0.1879397" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://G:/Users/Jacob/Documents/Luna/Luna-Web/www/js/luna-client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="23" selection-start="2324" selection-end="2760" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1370197499899" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1370197499899" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1370197499899" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1370197499899" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1370197499899" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1370197499899" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1370197499899" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1370197499899" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1370197499899" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1370197499899" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1370197499899" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1370197499899" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1370197499899" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1370197499899" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1370197499899" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1370197499899" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1370197499899" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1370197499899" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1370197499899" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1370197499899" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1370197499899" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1370197499899" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1370197499899" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1370197499899" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1370197499899" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
+    <entry file="http://code.createjs.com/createjs-2013.05.14.min.js">
+      <provider selected="true" editor-type-id="httpFileEditor">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.jshintrc">
+    <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="27" column="7" selection-start="707" selection-end="707" vertical-scroll-proportion="-0.65384614" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+    <entry file="file://C:/Program Files (x86)/Console2/console.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="287" column="14" selection-start="9358" selection-end="9358" vertical-scroll-proportion="0.7254902">
-          <folding />
-        </state>
+        <state line="29" column="48" selection-start="1489" selection-end="1489" vertical-scroll-proportion="-0.066797644" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/Field.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/DotModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="32" selection-start="439" selection-end="439" vertical-scroll-proportion="0.33333334">
+        <state line="12" column="2" selection-start="184" selection-end="184" vertical-scroll-proportion="0.20039293" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/DotProgress.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="77" selection-start="174" selection-end="206" vertical-scroll-proportion="0.16699411" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/Dots.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="2" selection-start="897" selection-end="897" vertical-scroll-proportion="0.4842829" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/grunt-karma/node_modules/karma/lib/launchers/Chrome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="23" selection-start="715" selection-end="715" vertical-scroll-proportion="0.4675835" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/npm/node_modules/karma/lib/launchers/Chrome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="77" selection-start="686" selection-end="686" vertical-scroll-proportion="0.43418467" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="274" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/karma.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="21" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="2" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/DotProgress.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="914" selection-end="914" vertical-scroll-proportion="0.0">
+        <state line="99" column="36" selection-start="2823" selection-end="2823" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/Dot.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="2" selection-start="319" selection-end="319" vertical-scroll-proportion="0.0">
+        <state line="10" column="12" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/Dots.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/DotController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="2" selection-start="1105" selection-end="1105" vertical-scroll-proportion="0.0">
+        <state line="58" column="4" selection-start="1460" selection-end="1460" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/app/scripts/DotView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="32" column="5" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
+    <entry file="file://$PROJECT_DIR$/test/unit/DotViewTest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="28" selection-start="330" selection-end="330" vertical-scroll-proportion="0.24256837">
-          <folding />
+        <state line="50" column="38" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.83497053">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

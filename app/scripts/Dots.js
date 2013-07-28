@@ -1,47 +1,41 @@
-function Dots(options) {
-	Dots._super.constructor.call(this);
-	this.dots = [];
-	this.setDotSprite(options.sprite, options.spriteWidth, options.spriteHeight);
-	this.createDots(options.rows, options.columns, options.spacing);
-}
-inherits( Dots, createjs.Container)
+var dotProgress = dotProgress || {};
+dotProgress.Dots = function() {
 
 
-Dots.prototype.setDotSprite = function (sprite, frameWidth, frameHeight) {
-	var data = {
-		images: [sprite],
-		frames: { width: frameWidth, height: frameHeight },
-		animations: { inactive: [0], active: [1] }
+	function Dots(options) {
+		console.log('Dots::constructor', options);
+		Dots._super.constructor.call(this);
+		this.dots = [];
+		this.options = options;
+	}
+
+
+	Dots.prototype.spriteLoadedHandler = function() {
+		var options = this.options;
+		var sprite = this.queue.getResult('sprite');
+		var spritesheet = this.makeSpritesheet(sprite, options.spriteWidth, options.spriteHeight);
+		console.log('Dots::spriteLoadedHandler', sprite, spritesheet);
+		this.createDots(spritesheet, options.rows, options.columns, options.spacing)
+	}
+
+
+	Dots.prototype.makeSpritesheet = function (sprite, frameWidth, frameHeight) {
+		var data = {
+			images: [sprite],
+			frames: { width: frameWidth, height: frameHeight },
+			animations: { inactive: [0], active: [1] }
+		};
+		var spritesheet = new createjs.SpriteSheet(data);
+		return(spritesheet);
+};
+
+
+	Dots.prototype.remove = function () {
+		this.clearDots();
+		delete this.dots;
 	};
-	this.spriteSheet = new createjs.SpriteSheet(data);
-};
 
 
-Dots.prototype.createDots = function (rows, columns, spacing) {
-	var dot;
-	var num = rows * columns;
-	for (var i = 0; i < num; i++) {
-		dot = new dotProgress.Dot(this.spriteSheet);
-		dot.x = Math.floor(i / rows) * spacing;
-		dot.y = (i % rows) * spacing;
-		this.dots.push(dot);
-		this.addChild(dot);
-	}
-};
+	return(Dots);
 
-
-Dots.prototype.clearDots = function () {
-	var len = this.dots.length;
-	var dot;
-	for (var i = 0; i < len; i++) {
-		dot = this.dots[i];
-		dot.remove();
-	}
-	this.removeAllChildren();
-};
-
-
-Dots.prototype.remove = function () {
-	this.clearDots();
-	delete this.dots;
-};
+}()

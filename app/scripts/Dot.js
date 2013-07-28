@@ -1,16 +1,16 @@
-var Dot = function (spritesheet) {
-	Dot._super.constructor.call(this, spritesheet)
-	this.active = false;
-	this.roundX = 0;
-	this.roundY = 0;
-	this.roundZ = 0;
-	this.gotoAndStop('inactive');
-}
+var dotProgress = dotProgress || {};
+dotProgress.Dot = function () {
 
-inherits( Dot, createjs.BitmapAnimation );
+	var Dot = function () {
+		this.active = false;
+		this.scale = 1;
+		this.x3d = 0;
+		this.y3d = 0;
+		this.z3d = 0;
+		this.x2d = 0;
+		this.y2d = 0;
+	}
 
-Dot.prototype.activate = function () {
-};
+	return(Dot);
 
-Dot.prototype.remove = function () {
-};
+}()

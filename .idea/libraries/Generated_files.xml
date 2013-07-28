@@ -1,12 +1,5 @@
 <component name="libraryTable">
   <library name="Generated files" type="javaScript">
-    <properties>
-      <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/app/scripts/dotProgress/DotProgress.js" />
-        <item url="file://$PROJECT_DIR$/app/scripts/dotProgress/Dot.js" />
-        <item url="file://$PROJECT_DIR$/app/scripts/dotProgress/Dots.js" />
-      </sourceFilesUrls>
-    </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/app/PreloadDots.js" />
       <root url="file://$PROJECT_DIR$/app/PreloadDots.js" />
@@ -19,15 +12,11 @@
       <root url="file://$PROJECT_DIR$/app/scripts/threeDPoint.js" />
       <root url="file://$PROJECT_DIR$/app/scripts/3dField.js" />
       <root url="file://$PROJECT_DIR$/app/scripts/PreloaderDots.js" />
-      <root url="file://$PROJECT_DIR$/app/scripts/Dot.js" />
       <root url="file://$PROJECT_DIR$/app/scripts/IThreeDParticle.js" />
-      <root url="file://$PROJECT_DIR$/app/scripts/Dots.js" />
       <root url="file://$PROJECT_DIR$/app/scripts/threeDField.js" />
       <root url="file://$PROJECT_DIR$/app/scripts/PreloaderDots.js" />
       <root url="file://$PROJECT_DIR$/app/scripts/preloader/FancyProgressOptions.js" />
-      <root url="file://$PROJECT_DIR$/app/scripts/Dot.js" />
       <root url="file://$PROJECT_DIR$/app/scripts/IThreeDParticle.js" />
-      <root url="file://$PROJECT_DIR$/app/scripts/Dots.js" />
       <root url="file://$PROJECT_DIR$/app/scripts/threeDField.js" />
       <root url="file://$PROJECT_DIR$/app/scripts/preloader/FancyProgressOptions.js" />
       <root url="file://$PROJECT_DIR$/app/scripts/dotProgress/IFancyProgressOptions.js" />
@@ -40,8 +29,8 @@
       <root url="file://$PROJECT_DIR$/app/scripts/utils/misc.js" />
       <root url="file://$PROJECT_DIR$/define/jquery/jquery-tests.js" />
       <root url="file://$PROJECT_DIR$/app/scripts/dotProgress/IDotProgressOptions.js" />
-      <root url="file://$PROJECT_DIR$/app/scripts/DotProgress.js" />
       <root url="file://$PROJECT_DIR$/app/scripts/Field.js" />
+      <root url="file://$PROJECT_DIR$/app/scripts/DotProgress.js" />
       <root url="file://$PROJECT_DIR$/app/scripts/Dot.js" />
       <root url="file://$PROJECT_DIR$/app/scripts/Dots.js" />
     </CLASSES>
