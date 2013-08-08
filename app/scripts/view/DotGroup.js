@@ -1,7 +1,5 @@
-// @see DotViewTest
-
 var dotProgress = dotProgress || {};
-dotProgress.DotView = function(model, elm, window) {
+dotProgress.DotGroup = function(model, elm, window) {
 
 	'use strict';
 
@@ -13,6 +11,7 @@ dotProgress.DotView = function(model, elm, window) {
 		if(model.active) {
 			createDotsIfNeeded();
 			removeDotsIfNeeded();
+			positionDots();
 		}
 	};
 
@@ -27,7 +26,9 @@ dotProgress.DotView = function(model, elm, window) {
 		var particleLen = model.particles.length;
 		var dotLen = dots.length;
 		while(dotLen < particleLen) {
-			var dot = new dotProgress.Dot(elm);
+			var particle = model.particles[dotLen];
+			var dot = new dotProgress.Dot(document, particle);
+			elm.appendChild(dot.div);
 			dots.push(dot);
 			dotLen++;
 		}
@@ -36,9 +37,19 @@ dotProgress.DotView = function(model, elm, window) {
 
 	var removeDotsIfNeeded = function() {
 		var particleLen = model.particles.length;
-		var dotLen = dots.length;
-		if(dotLen > particleLen) {
-			dots.slice(0, particleLen);
+		while(dots.length > particleLen) {
+			var dot = dots.pop();
+			elm.removeChild(dot.div);
+		}
+	};
+
+
+	var positionDots = function() {
+		var particleCount = model.particles.length;
+		for(var i=0; i<particleCount; i++) {
+			var particle = model.particles[i];
+			var dot = dots[i];
+			dot.setPosition(particle.x2d, particle.y2d, particle.scale, particle.zIndex, particle.active);
 		}
 	};
 

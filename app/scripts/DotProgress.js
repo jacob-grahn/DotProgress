@@ -3,11 +3,6 @@ dotProgress.DotProgress = function() {
 
 
 	var DotProgress = function (canvas, options) {
-
-
-
-
-
 		createjs.Ticker.addEventListener("tick", dotProgress.bind(this.tickHandler, this));
 	}
 
@@ -25,4 +20,4 @@ dotProgress.DotProgress = function() {
 
 	return(DotProgress);
 
-}()
+}();

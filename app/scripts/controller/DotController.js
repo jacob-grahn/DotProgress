@@ -1,5 +1,5 @@
 var dotProgress = dotProgress || {};
-dotProgress.DotController = function() {
+dotProgress.DotController = (function() {
 
 	'use strict';
 
@@ -40,14 +40,13 @@ dotProgress.DotController = function() {
 
 
 	DotController.prototype.createDots = function(model, rows, columns, spacing) {
-		var dot;
+		var point;
 		var num = rows * columns;
 		for (var i = 0; i < num; i++) {
-			dot = new dotProgress.Dot();
-			dot.x = Math.floor(i / rows) * spacing;
-			dot.y = (i % rows) * spacing;
-			this.model.dots.push(dot);
-			console.log(dot);
+			point = new dotProgress.Point3d();
+			point.x = Math.floor(i / rows) * spacing;
+			point.y = (i % rows) * spacing;
+			this.model.particles.push(point);
 		}
 	};
 
@@ -66,8 +65,8 @@ dotProgress.DotController = function() {
 
 
 	DotController.prototype.setDimensions = function (w, h) {
-		this.model.scaleX = w / this.defaults.width;
-		this.model.scaleY = h / this.defaults.height;
+		this.model.scaleX = w / defaultOptions.width;
+		this.model.scaleY = h / defaultOptions.height;
 	};
 
 
@@ -86,4 +85,4 @@ dotProgress.DotController = function() {
 
 	return(DotController);
 
-}();
+}());

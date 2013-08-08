@@ -31,7 +31,7 @@
       <root url="file://$PROJECT_DIR$/app/scripts/dotProgress/IDotProgressOptions.js" />
       <root url="file://$PROJECT_DIR$/app/scripts/Field.js" />
       <root url="file://$PROJECT_DIR$/app/scripts/DotProgress.js" />
-      <root url="file://$PROJECT_DIR$/app/scripts/Dot.js" />
+      <root url="file://$PROJECT_DIR$/app/scripts/model/Point3d.js" />
       <root url="file://$PROJECT_DIR$/app/scripts/Dots.js" />
     </CLASSES>
     <SOURCES />

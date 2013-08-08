@@ -10,8 +10,8 @@ basePath = '';
 files = [
   JASMINE,
   JASMINE_ADAPTER,
-	'app/scripts/*.js',
-  'test/spec/*.js'
+	'app/scripts/**/*.js',
+  'test/unit/*.js'
 ];
 
 
@@ -55,7 +55,7 @@ autoWatch = true;
 // - Safari (only Mac)
 // - PhantomJS
 // - IE (only Windows)
-browsers = ['Chrome'];
+browsers = ['Firefox'];
 
 
 // If browser does not capture in given timeout [ms], kill it
