@@ -1,33 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f52372b0-8a0e-4f6c-bd44-5de76b175239" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/DotController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/DotModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/DotView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/DotViewTest.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/karma.conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/webResources.xml" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\app\scripts\Field.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\test\lib\chai.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\test\lib\expect.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\test\lib\mocha\mocha.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\DotProgress\test\lib\mocha\mocha.js" afterPath="" />
-      <change type="MOVED" beforePath="C:\Projects\DotProgress\test\spec\test.js" afterPath="$PROJECT_DIR$/test/unit/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/Dot.js" afterPath="$PROJECT_DIR$/app/scripts/Dot.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/DotProgress.js" afterPath="$PROJECT_DIR$/app/scripts/DotProgress.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/Dots.js" afterPath="$PROJECT_DIR$/app/scripts/Dots.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/PreloadDots.iml" afterPath="$PROJECT_DIR$/.idea/PreloadDots.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/utils.js" afterPath="$PROJECT_DIR$/app/scripts/utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="f52372b0-8a0e-4f6c-bd44-5de76b175239" name="Default" comment="" />
     <ignored path="PreloadDots.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/a.dummy" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1373096379634" ignored="false" />
@@ -102,7 +76,7 @@
     <file path="$PROJECT_DIR$/node_modules/grunt-contrib-compass/node_modules/grunt-lib-contrib/node_modules/zlib-browserify/package.json" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374689567634" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/grunt-mocha/node_modules/mocha/mocha.js" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374689567634" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/grunt-lib-contrib/node_modules/zlib-browserify/package.json" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374689567634" ignored="false" />
-    <file path="/Dummy.txt" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374904697494" ignored="false" />
+    <file path="/Dummy.txt" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1375470209373" ignored="false" />
     <file path="/DotProgress.js" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374723098563" ignored="false" />
     <file path="/Dots.js" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374723804934" ignored="false" />
     <file path="/utils.js" changelist="f52372b0-8a0e-4f6c-bd44-5de76b175239" time="1374789912691" ignored="false" />
@@ -130,46 +104,7 @@
     <favorites_list name="PreloadDots" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="karma.conf.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/karma.conf.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="21" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dot.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/Dot.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="12" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DotView.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/DotView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="5" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DotViewTest.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/unit/DotViewTest.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="38" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.83497053">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -329,14 +264,14 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="IntelliLang.Configuration" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="options.lastSelected" value="IntelliLang.Configuration" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -422,12 +357,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13645834" sideWeight="0.70881224" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13645834" sideWeight="0.70881224" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29118773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973504" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -562,13 +497,6 @@
         <state line="0" column="0" selection-start="0" selection-end="274" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/karma.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="21" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/utils.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="99" column="36" selection-start="2823" selection-end="2823" vertical-scroll-proportion="0.0">
@@ -576,33 +504,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/Dot.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="12" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/DotController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="4" selection-start="1460" selection-end="1460" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="58" column="4" selection-start="1460" selection-end="1460" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/DotViewTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="38" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.48231828">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/DotView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="5" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0">
+        <state line="32" column="5" selection-start="636" selection-end="636" vertical-scroll-proportion="0.41552064">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/DotViewTest.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/Dot.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="38" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.83497053">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="10" column="12" selection-start="210" selection-end="210" vertical-scroll-proportion="0.16699411">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/karma.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="21" selection-start="288" selection-end="288" vertical-scroll-proportion="0.016699411">
+          <folding />
         </state>
       </provider>
     </entry>
