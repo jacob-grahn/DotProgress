@@ -1,5 +1,7 @@
 var dotProgress = dotProgress || {};
-dotProgress.DotModel = function() {
+dotProgress.Field3d = function() {
+
+	'use strict';
 
 	return({
 		fov: 600,

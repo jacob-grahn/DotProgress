@@ -2,21 +2,21 @@
 <project version="4">
   <component name="JSHintConfiguration" version="2.1.0" use-config-file="false">
     <option bitwise="true" />
-    <option camelcase="false" />
+    <option camelcase="true" />
     <option curly="true" />
     <option eqeqeq="true" />
     <option forin="true" />
-    <option immed="false" />
-    <option latedef="false" />
-    <option newcap="false" />
+    <option immed="true" />
+    <option latedef="true" />
+    <option newcap="true" />
     <option noarg="true" />
     <option noempty="true" />
     <option nonew="true" />
     <option plusplus="false" />
-    <option regexp="false" />
+    <option regexp="true" />
     <option undef="true" />
-    <option unused="false" />
-    <option strict="true" />
+    <option unused="true" />
+    <option strict="false" />
     <option trailing="false" />
     <option asi="false" />
     <option boss="false" />
@@ -27,7 +27,7 @@
     <option evil="false" />
     <option expr="false" />
     <option funcscope="false" />
-    <option globalstrict="false" />
+    <option globalstrict="true" />
     <option iterator="false" />
     <option lastsemic="false" />
     <option laxbreak="false" />

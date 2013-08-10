@@ -1,28 +1,36 @@
 var dotProgress = dotProgress || {};
-dotProgress.DotProgress = function() {
+dotProgress.DotProgress = function(elm, customOptions) {
 
+	var options = dotProgress.applyObjectDefaults(customOptions, dotProgress.defaultOptions);
+	var field = new dotProgress.Field3d();
+	var dotController = new dotProgress.DotController(window, field, options);
+	var fieldView = new dotProgress.FieldView(window, document, field, options);
+	elm.appendChild(fieldView.div);
 
-	var DotProgress = function (canvas, options) {
-
-
-
-
-
-		createjs.Ticker.addEventListener("tick", dotProgress.bind(this.tickHandler, this));
-	}
-
-
-	DotProgress.prototype.setCanvas = function (c) {
-		this.stage = new createjs.Stage(c);
-		this.stage.addChild(this.dots);
+	var start = function() {
+		dotController.start();
 	};
 
 
-	DotProgress.prototype.tickHandler = function () {
-		this.stage.update();
+	var stop = function() {
+		dotController.stop();
 	};
 
 
-	return(DotProgress);
+	var remove = function() {
+		dotController.remove();
+		dotController = null;
 
-}()
+		fieldView.remove();
+		fieldView = null;
+
+		field = null;
+	};
+
+
+	return({
+		start: start,
+		stop: stop,
+		remove: remove
+	});
+};
