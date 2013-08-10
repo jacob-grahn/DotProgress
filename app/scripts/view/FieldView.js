@@ -1,10 +1,10 @@
 var dotProgress = dotProgress || {};
-dotProgress.FieldView = function(model, elm, window) {
-
-	'use strict';
+dotProgress.FieldView = function(window, document, model, options) {
 
 	var dots = [];
 	var animationCallbackId;
+	var div = document.createElement('div');
+	div.className = 'dot-field';
 
 
 	var render = function() {
@@ -26,9 +26,8 @@ dotProgress.FieldView = function(model, elm, window) {
 		var particleLen = model.particles.length;
 		var dotLen = dots.length;
 		while(dotLen < particleLen) {
-			var particle = model.particles[dotLen];
-			var dot = new dotProgress.PointView(document, particle);
-			elm.appendChild(dot.div);
+			var dot = new dotProgress.PointView(document, options);
+			div.appendChild(dot.div);
 			dots.push(dot);
 			dotLen++;
 		}
@@ -39,7 +38,7 @@ dotProgress.FieldView = function(model, elm, window) {
 		var particleLen = model.particles.length;
 		while(dots.length > particleLen) {
 			var dot = dots.pop();
-			elm.removeChild(dot.div);
+			div.removeChild(dot.div);
 		}
 	};
 
@@ -65,14 +64,16 @@ dotProgress.FieldView = function(model, elm, window) {
 
 
 	var remove = function() {
-		for(var dot in dots) {
-			elm.removeChild(dot.div);
+		while (div.lastChild) {
+			div.removeChild(div.lastChild);
 		}
+		div = null;
 		dots = null;
 	};
 
 
 	return({
+		div: div,
 		start: start,
 		stop: stop,
 		render: render,

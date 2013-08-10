@@ -6,18 +6,19 @@
 
 	describe('FieldView', function () {
 
-		var model;
+		var field;
 		var div;
 		var dotView;
+		var options = dotProgress.applyObjectDefaults({}, dotProgress.defaultOptions);
 
 
 		beforeEach(function() {
-			model = new dotProgress.Field3d();
-			model.particles = [{x2d:1, y2d:-2, scale:-1, active:false}, {x2d:-20, y2d:-20, scale:0.5, active:false}, {x2d:0, y2d:0, scale:1, active:true}];
-			model.active = true;
+			field = new dotProgress.Field3d();
+			field.particles = [{x2d:1, y2d:-2, scale:-1, active:false}, {x2d:-20, y2d:-20, scale:0.5, active:false}, {x2d:0, y2d:0, scale:1, active:true}];
+			field.active = true;
 
-			div = document.createElement('div');
-			dotView = new dotProgress.FieldView(model, div, window);
+			dotView = new dotProgress.FieldView(window, document, field, options);
+			div = dotView.div;
 			dotView.render();
 		});
 
@@ -28,15 +29,15 @@
 
 
 		it('should add or remove html elements to match the number of particles', function() {
-			model.particles.push({x2d:-15, y2d:234}, {x2d:3, y2d:88});
+			field.particles.push({x2d:-15, y2d:234}, {x2d:3, y2d:88});
 			dotView.render();
 			expect(div.childNodes.length).toBe(5);
 
-			model.particles.pop();
+			field.particles.pop();
 			dotView.render();
 			expect(div.childNodes.length).toBe(4);
 
-			model.particles = [];
+			field.particles = [];
 			dotView.render();
 			expect(div.childNodes.length).toBe(0);
 		});
@@ -64,9 +65,9 @@
 			expect(c1.className).toMatch('inactive');
 			expect(c2.className).toMatch('active');
 
-			model.particles[0].active = false;
-			model.particles[1].active = true;
-			model.particles[2].active = false;
+			field.particles[0].active = false;
+			field.particles[1].active = true;
+			field.particles[2].active = false;
 			dotView.render();
 			expect(c0.className).toMatch('inactive');
 			expect(c1.className).toMatch('active');

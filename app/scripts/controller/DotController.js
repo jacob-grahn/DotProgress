@@ -1,23 +1,9 @@
 var dotProgress = dotProgress || {};
-dotProgress.DotController = function(window, model, customOptions) {
+dotProgress.DotController = function(window, model, options) {
 
 	'use strict';
 
 	var animationCallbackId;
-	var defaultOptions = {
-		width: 300,
-		height: 300,
-		offsetX: 0,
-		offsetY: 0,
-		spacing: 10,
-		rows: 2,
-		columns: 10,
-		xRotVel: 0.01502,
-		yRotVel: 0.0213,
-		zRotVel: 0
-	};
-	var options = dotProgress.applyObjectDefaults(customOptions, defaultOptions);
-
 
 	var createDots = function(rows, columns, spacing) {
 		clearDots();
@@ -51,8 +37,8 @@ dotProgress.DotController = function(window, model, customOptions) {
 
 
 	var setDimensions = function (w, h) {
-		model.scaleX = w / defaultOptions.width;
-		model.scaleY = h / defaultOptions.height;
+		model.scaleX = w / dotProgress.defaultOptions.width;
+		model.scaleY = h / dotProgress.defaultOptions.height;
 	};
 
 
