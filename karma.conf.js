@@ -11,7 +11,7 @@ files = [
   JASMINE,
   JASMINE_ADAPTER,
 	'app/scripts/**/*.js',
-  'test/unit/*.js'
+  'test/unit/**/*.js'
 ];
 
 

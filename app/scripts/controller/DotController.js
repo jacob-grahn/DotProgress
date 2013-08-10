@@ -1,13 +1,10 @@
 var dotProgress = dotProgress || {};
-dotProgress.DotController = (function() {
+dotProgress.DotController = function(window, model, customOptions) {
 
 	'use strict';
 
-	var self = this;
+	var animationCallbackId;
 	var defaultOptions = {
-		sprite: 'img/dot-sprite.png',
-		spriteWidth: 12,
-		spriteHeight: 12,
 		width: 300,
 		height: 300,
 		offsetX: 0,
@@ -19,70 +16,77 @@ dotProgress.DotController = (function() {
 		yRotVel: 0.0213,
 		zRotVel: 0
 	};
+	var options = dotProgress.applyObjectDefaults(customOptions, defaultOptions);
 
 
-	var DotController = function(model, options) {
-		this.model = model;
-		this.options = dotProgress.applyObjectDefaults(options, defaultOptions);
-		this.setDimensions(options.width, options.height);
-		this.setOffset(options.offsetX, options.offsetY);
-		this.createDots(model, options.rows, options.columns, options.spacing);
-		this.start();
-	};
-
-
-	DotController.prototype.step = function() {
-		self.animationCallbackId = window.requestAnimationFrame(self.step);
-		self.model.xRotation += self.options.xRotVel;
-		self.model.yRotation += self.options.yRotVel;
-		self.model.zRotation += self.options.zRotVel;
-	};
-
-
-	DotController.prototype.createDots = function(model, rows, columns, spacing) {
+	var createDots = function(rows, columns, spacing) {
+		clearDots();
 		var point;
 		var num = rows * columns;
 		for (var i = 0; i < num; i++) {
 			point = new dotProgress.Point3d();
-			point.x = Math.floor(i / rows) * spacing;
-			point.y = (i % rows) * spacing;
-			this.model.particles.push(point);
+			point.x3d = Math.floor(i / rows) * spacing;
+			point.y3d = (i % rows) * spacing;
+			model.particles.push(point);
 		}
 	};
 
 
-	DotController.prototype.start = function () {
-		this.stop();
-		this.animationCallbackId = window.requestAnimationFrame(this.step);
-		this.model.active = true;
+	var clearDots = function() {
+		model.particles = [];
 	};
 
 
-	DotController.prototype.stop = function () {
-		this.model.active = false;
-		window.cancelAnimationFrame(this.animationCallbackId);
+	var start = function () {
+		stop();
+		animationCallbackId = window.requestAnimationFrame(step);
+		model.active = true;
 	};
 
 
-	DotController.prototype.setDimensions = function (w, h) {
-		this.model.scaleX = w / defaultOptions.width;
-		this.model.scaleY = h / defaultOptions.height;
+	var stop = function () {
+		model.active = false;
+		window.cancelAnimationFrame(animationCallbackId);
 	};
 
 
-	DotController.prototype.setOffset = function (oX, oY) {
-		this.model.offsetX = oX;
-		this.model.offsetY = oY;
+	var setDimensions = function (w, h) {
+		model.scaleX = w / defaultOptions.width;
+		model.scaleY = h / defaultOptions.height;
 	};
 
 
-	DotController.prototype.remove = function () {
-		this.stop();
-		delete this.model;
-		delete this.options;
+	var setOffset = function (oX, oY) {
+		model.offsetX = oX;
+		model.offsetY = oY;
 	};
 
 
-	return(DotController);
+	var step = function() {
+		model.xRotation += options.xRotVel;
+		model.yRotation += options.yRotVel;
+		model.zRotation += options.zRotVel;
+		animationCallbackId = window.requestAnimationFrame(step);
+	};
 
-}());
+
+	var remove = function () {
+		stop();
+		clearDots();
+	};
+
+
+	setDimensions(options.width, options.height);
+	setOffset(options.offsetX, options.offsetY);
+	createDots(options.rows, options.columns, options.spacing);
+	start();
+
+
+	return({
+		start: start,
+		stop: stop,
+		remove: remove,
+		model: model
+	});
+
+};

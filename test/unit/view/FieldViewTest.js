@@ -4,7 +4,7 @@
 
 	"use strict";
 
-	describe('DotView', function () {
+	describe('FieldView', function () {
 
 		var model;
 		var div;
@@ -17,7 +17,7 @@
 			model.active = true;
 
 			div = document.createElement('div');
-			dotView = new dotProgress.DotGroup(model, div, window);
+			dotView = new dotProgress.FieldView(model, div, window);
 			dotView.render();
 		});
 

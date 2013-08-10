@@ -1,10 +1,11 @@
 var dotProgress = dotProgress || {};
-dotProgress.Dot = (function() {
+dotProgress.PointView = (function() {
 
 	'use strict';
 
 	var Dot = function(document) {
 		this.div = document.createElement('div');
+		this.div.innerHTML = 'O';
 	};
 
 

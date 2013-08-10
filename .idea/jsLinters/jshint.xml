@@ -16,7 +16,7 @@
     <option regexp="true" />
     <option undef="true" />
     <option unused="true" />
-    <option strict="true" />
+    <option strict="false" />
     <option trailing="false" />
     <option asi="false" />
     <option boss="false" />

@@ -2,6 +2,7 @@
   <dictionary name="jacob">
     <words>
       <w>firefox</w>
+      <w>polyfill</w>
     </words>
   </dictionary>
 </component>

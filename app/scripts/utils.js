@@ -44,12 +44,11 @@ dotProgress.applyObjectDefaults = function ( obj, defaultObj ) {
 	var vendors = ['ms', 'moz', 'webkit', 'o'];
 	for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
 		window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
-		window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame']
-			|| window[vendors[x]+'CancelRequestAnimationFrame'];
+		window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame'] || window[vendors[x]+'CancelRequestAnimationFrame'];
 	}
 
-	if (!window.requestAnimationFrame)
-		window.requestAnimationFrame = function(callback, element) {
+	if (!window.requestAnimationFrame) {
+		window.requestAnimationFrame = function(callback) {
 			var currTime = new Date().getTime();
 			var timeToCall = Math.max(0, 16 - (currTime - lastTime));
 			var id = window.setTimeout(function() { callback(currTime + timeToCall); },
@@ -57,11 +56,13 @@ dotProgress.applyObjectDefaults = function ( obj, defaultObj ) {
 			lastTime = currTime + timeToCall;
 			return id;
 		};
+	}
 
-	if (!window.cancelAnimationFrame)
+	if (!window.cancelAnimationFrame) {
 		window.cancelAnimationFrame = function(id) {
 			clearTimeout(id);
 		};
+	}
 }());
 
 
@@ -99,4 +100,4 @@ dotProgress.flatten3d = function (fov, xRot, yRot, zRot, particles) {
 		particle.x2d = zx * perspective;
 		particle.y2d = zy * perspective;
 	}
-}
+};

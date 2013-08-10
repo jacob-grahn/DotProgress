@@ -1,5 +1,5 @@
 var dotProgress = dotProgress || {};
-dotProgress.DotGroup = function(model, elm, window) {
+dotProgress.FieldView = function(model, elm, window) {
 
 	'use strict';
 
@@ -27,7 +27,7 @@ dotProgress.DotGroup = function(model, elm, window) {
 		var dotLen = dots.length;
 		while(dotLen < particleLen) {
 			var particle = model.particles[dotLen];
-			var dot = new dotProgress.Dot(document, particle);
+			var dot = new dotProgress.PointView(document, particle);
 			elm.appendChild(dot.div);
 			dots.push(dot);
 			dotLen++;
@@ -64,10 +64,19 @@ dotProgress.DotGroup = function(model, elm, window) {
 	};
 
 
+	var remove = function() {
+		for(var dot in dots) {
+			elm.removeChild(dot.div);
+		}
+		dots = null;
+	};
+
+
 	return({
 		start: start,
 		stop: stop,
-		render: render
+		render: render,
+		remove: remove
 	});
 
 };
