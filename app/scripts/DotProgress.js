@@ -1,20 +1,16 @@
+/* global shuffle */
+
 var dotProgress = dotProgress || {};
 dotProgress.DotProgress = function(elm, customOptions) {
 
 	var options = dotProgress.applyObjectDefaults(customOptions, dotProgress.defaultOptions);
+	options.halfWidth = Math.round((options.width - options.spacing) / 2);
+	options.halfHeight = Math.round((options.height - options.spacing) / 2);
+
 	var field = new dotProgress.Field3d();
-	var dotController = new dotProgress.DotController(window, field, options);
+	var dotController = new dotProgress.DotController(window, field, options, shuffle);
 	var fieldView = new dotProgress.FieldView(window, document, field, options);
 	elm.appendChild(fieldView.div);
-
-	var start = function() {
-		dotController.start();
-	};
-
-
-	var stop = function() {
-		dotController.stop();
-	};
 
 
 	var remove = function() {
@@ -29,8 +25,9 @@ dotProgress.DotProgress = function(elm, customOptions) {
 
 
 	return({
-		start: start,
-		stop: stop,
+		start: dotController.start,
+		stop: dotController.stop,
+		setProgress: dotController.setProgress,
 		remove: remove
 	});
 };

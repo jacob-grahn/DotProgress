@@ -1,59 +1,107 @@
 var dotProgress = dotProgress || {};
-dotProgress.DotController = function(window, model, options) {
+dotProgress.DotController = function(window, field, options, shuffle) {
 
 	'use strict';
 
 	var animationCallbackId;
 
-	var createDots = function(rows, columns, spacing) {
+	var createDots = function(rows, columns, depth, spacing) {
 		clearDots();
 		var point;
 		var num = rows * columns;
+		var halfWidth = columns * spacing / 2;
+		var halfHeight = rows * spacing / 2;
 		for (var i = 0; i < num; i++) {
 			point = new dotProgress.Point3d();
-			point.x3d = Math.floor(i / rows) * spacing;
-			point.y3d = (i % rows) * spacing;
-			model.particles.push(point);
+			point.x3d = Math.floor(i / rows) * spacing - halfWidth;
+			point.y3d = (i % rows) * spacing - halfHeight;
+			point.z3d = depth / 2 * spacing;
+			field.particles.push(point);
+		}
+		if(options.shuffle) {
+			shuffle(field.particles);
 		}
 	};
 
 
 	var clearDots = function() {
-		model.particles = [];
 	};
 
 
 	var start = function () {
 		stop();
+		field.active = true;
 		animationCallbackId = window.requestAnimationFrame(step);
-		model.active = true;
 	};
 
 
 	var stop = function () {
-		model.active = false;
+		field.active = false;
 		window.cancelAnimationFrame(animationCallbackId);
 	};
 
 
-	var setDimensions = function (w, h) {
-		model.scaleX = w / dotProgress.defaultOptions.width;
-		model.scaleY = h / dotProgress.defaultOptions.height;
+	var setProgress = function(num) {
+		var len = field.particles.length;
+		for(var i=0; i<len; i++) {
+			var point = field.particles[i];
+			var percent = i / len;
+			if(percent <= num) {
+				point.active = true;
+			}
+			else {
+				point.active = false;
+			}
+		}
 	};
 
 
-	var setOffset = function (oX, oY) {
-		model.offsetX = oX;
-		model.offsetY = oY;
+	var setDimensions = function (w, h) {
+		field.scaleX = w / dotProgress.defaultOptions.width;
+		field.scaleY = h / dotProgress.defaultOptions.height;
+	};
+
+
+	var animateActivePoints = function() {
+		var len = field.particles.length;
+		var zInactive = options.depth / 2 * options.spacing;
+		var zActive = -zInactive;
+		var dist;
+		var point;
+		var zTarget;
+
+		for(var i=0; i<len; i++) {
+			point = field.particles[i];
+
+			if(point.active) {
+				zTarget = zActive;
+			}
+			else {
+				zTarget = zInactive;
+			}
+
+			dist = zTarget - point.z3d;
+			if(dist !== 0) {
+				if(dist > 0) {
+					point.z3d += options.transitionVel;
+				}
+				else {
+					point.z3d -= options.transitionVel;
+				}
+			}
+		}
 	};
 
 
 	var step = function() {
-		model.xRotation += options.xRotVel;
-		model.yRotation += options.yRotVel;
-		model.zRotation += options.zRotVel;
+		field.xRotation += options.xRotVel;
+		field.yRotation += options.yRotVel;
+		field.zRotation += options.zRotVel;
+		dotProgress.flatten3d(field.fov, field.xRotation, field.yRotation, field.zRotation, field.particles);
+		animateActivePoints();
 		animationCallbackId = window.requestAnimationFrame(step);
 	};
+
 
 
 	var remove = function () {
@@ -63,16 +111,15 @@ dotProgress.DotController = function(window, model, options) {
 
 
 	setDimensions(options.width, options.height);
-	setOffset(options.offsetX, options.offsetY);
-	createDots(options.rows, options.columns, options.spacing);
+	createDots(options.rows, options.columns, options.depth, options.spacing);
 	start();
 
 
 	return({
 		start: start,
 		stop: stop,
-		remove: remove,
-		model: model
+		setProgress: setProgress,
+		remove: remove
 	});
 
 };

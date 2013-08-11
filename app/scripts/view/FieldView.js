@@ -5,6 +5,9 @@ dotProgress.FieldView = function(window, document, model, options) {
 	var animationCallbackId;
 	var div = document.createElement('div');
 	div.className = 'dot-field';
+	div.style.position = 'relative';
+	div.style.width = options.width + 'px';
+	div.style.height = options.height + 'px';
 
 
 	var render = function() {
@@ -48,13 +51,13 @@ dotProgress.FieldView = function(window, document, model, options) {
 		for(var i=0; i<particleCount; i++) {
 			var particle = model.particles[i];
 			var dot = dots[i];
-			dot.setPosition(particle.x2d, particle.y2d, particle.scale, particle.zIndex, particle.active);
+			dot.setPosition(particle.x2d, particle.y2d, particle.scale, particle.active);
 		}
 	};
 
 
 	var start = function() {
-		render();
+		animationFrameCallback();
 	};
 
 
@@ -70,6 +73,9 @@ dotProgress.FieldView = function(window, document, model, options) {
 		div = null;
 		dots = null;
 	};
+
+
+	start();
 
 
 	return({
