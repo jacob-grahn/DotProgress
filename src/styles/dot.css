@@ -22,13 +22,13 @@
 }
 
 #dot-holder-3 .dot-inactive {
-	background: url('/img/dot-sprite.png');
+	background: url('../img/dot-sprite.png');
 	width: 12px;
 	height: 12px;
 }
 
 #dot-holder-3 .dot-active {
-	background: url('/img/dot-sprite.png') -12px 0px;
+	background: url('../img/dot-sprite.png') -12px 0px;
 	width: 12px;
 	height: 12px;
 }

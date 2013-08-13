@@ -1,6 +1,6 @@
 # DotProgress
 
-DotProgress is a simple and somewhat hypnotic progress indicator. It's customizable, and has no dependencies. [Demos.](https://jiggmin.com/projects/dot-progress/examples.html)
+DotProgress is a simple and somewhat hypnotic progress indicator. It's 2.2 kb (gziped), customizable, and has no dependencies. [Demos](https://jiggmin.com/projects/dot-progress/examples.html)
 
 ## Simple Example
 
@@ -10,6 +10,7 @@ DotProgress is a simple and somewhat hypnotic progress indicator. It's customiza
 
 	//set progress as things load
 	dots.setProgress(.5);
+
 
 ## Using images
 
@@ -35,62 +36,88 @@ DotProgress is a simple and somewhat hypnotic progress indicator. It's customiza
 		height: 12px;
 	}
 
-## Customization
+
+## Methods
+
+**start()** Start animating
+**stop()** Stop animating
+**setProgress(num)** Update the display with the current progress
+**remove()** Stop animating, and remove DotProgress from the DOM
+
+
+## Options
 
 There are several options that you can pass in to the constructor:
 
+	var options = {
+  	inactiveDisplay: 'X',
+  	activeDisplay: 'O',
+  	width: 150,
+  	height: 150,
+  	spacing: 10,
+  	rows: 5,
+  	columns: 5,
+  	depth: 5,
+  	xRotVel: 0.015,
+  	yRotVel: 0.021,
+  	zRotVel: 0,
+  	transitionVel: 1,
+  	shuffle: true
+  };
+  var elm = document.getElementById('dot-holder');
+  var dots = new dotProgress.DotProgress(elm, options);
+
 **inactiveDisplay**
-(String) (Default='X')
+[String]
 Dots representing uncompleted progress will display this html.
 
 **activeDisplay**
-(String) (Default='Y')
+[String]
 Dots representing completed progress will display this html.
 
 **width**
-(Number) (Default=150)
+[Number]
 Total width of the DotProgress display area.
 
 **height**
-(Number) (Default=150)
+[Number]
 Total height of the DotProgress display area.
 
 **spacing**
-(Number) (Default=10)
+[Number]
 Space in pixels between dots.
 
 **rows**
-(Number) (Default=5)
+[Number]
 Number of rows of dots.
 
 **columns**
-(Number) (Default=5)
+[Number]
 Number of columns of dots.
 
 **depth**
-(Number) (Default=5)
+[Number]
 Distance between active dots and inactive dots.
 
 **xRotVel**
-(Number) (Default=0.015)
+[Number]
 Speed that the dots rotate around the x axis.
 
 **yRotVel**
-(Number) (Default=0.021)
+[Number]
 Speed that the dots rotate around the y axis.
 
 **zRotVel**
-(Number) (Default=0)
+[Number]
 Speed that the dots rotate around the z axis.
 
 **transitionVel**
-(Number) (Default=1)
+[Number]
 Controls how fast dots transition from their inactive position to their active position.
 
 **shuffle**
-(Boolean) (Default=true)
+[Boolean]
 Determines whether the order that dots activate is random or orderly.
-
 
 
 ## Support
