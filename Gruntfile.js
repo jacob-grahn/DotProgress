@@ -18,7 +18,7 @@ module.exports = function (grunt) {
 
 	// configurable paths
 	var yeomanConfig = {
-		app: 'app',
+		app: 'src',
 		dist: 'dist'
 	};
 
@@ -248,10 +248,10 @@ module.exports = function (grunt) {
 		'useminPrepare',
 		'concurrent:dist',
 		'concat',
-		'cssmin',
 		'uglify',
 		'copy:dist',
-		'rev',
+		//'rev',
+		'imagemin',
 		'usemin'
 	]);
 

@@ -2,47 +2,31 @@
 <html>
 <head>
 	<title>Dot Progress</title>
-	<link rel="stylesheet" type="text/css" href="styles/dot.css">
+
+	<link rel="stylesheet" href="styles/dot.css">
+
+	<script src="scripts/dotProgress.js"></script>
 </head>
+
+
 <body>
+	<p>Default Settings</p>
+	<div id="dot-holder-1"></div>
+	<br>
 
-<p>Default Settings</p>
-<div id="dot-holder-1"></div>
-<br>
+	<p>CSS Squares</p>
+	<div id="dot-holder-2"></div>
+	<br>
 
-<p>CSS Squares</p>
-<div id="dot-holder-2"></div>
-<br>
+	<p>CSS Images</p>
+	<div id="dot-holder-3"></div>
+	<br>
 
-<p>CSS Images</p>
-<div id="dot-holder-3"></div>
-<br>
+	<p>Exclamation Line</p>
+	<div id="dot-holder-4"></div>
+	<br>
 
-<p>Exclamation Line</p>
-<div id="dot-holder-4"></div>
-<br>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-
-<!-- build:js scripts/scripts.js -->
-<script src="scripts/animationFramePolyfill.js"></script>
-
-<script src="scripts/controller/DotController.js"></script>
-
-<script src="scripts/model/DefaultOptions.js"></script>
-<script src="scripts/model/Field3d.js"></script>
-<script src="scripts/model/Point3d.js"></script>
-
-<script src="scripts/view/FieldView.js"></script>
-<script src="scripts/view/PointView.js"></script>
-
-<script src="scripts/DotProgress.js"></script>
-<script src="scripts/utils.js"></script>
-<!-- endbuild -->
-
-<script>
-	$(document).ready( function() {
-
+	<script>
 
 		//--- default
 		var options1 = {};
@@ -90,6 +74,7 @@
 		var options4 = {
 			rows: 1,
 			columns: 10,
+			depth: 0,
 			activeDisplay: '!',
 			inactiveDisplay: '.',
 			xRotVel: 0,
@@ -113,8 +98,8 @@
 			dots4.setProgress(progress);
 		}
 		setInterval(incProgress, 250);
-	});
-</script>
+
+	</script>
 
 </body>
 </html>

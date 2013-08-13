@@ -8,8 +8,8 @@ dotProgress.defaultOptions = {
 	rows: 5,
 	columns: 5,
 	depth: 5,
-	xRotVel: 0.01502,
-	yRotVel: 0.0213,
+	xRotVel: 0.015,
+	yRotVel: 0.021,
 	zRotVel: 0,
 	transitionVel: 1,
 	shuffle: true
