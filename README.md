@@ -39,10 +39,17 @@ DotProgress is a simple and somewhat hypnotic progress indicator. It's 2.2 kb 
 
 ## Methods
 
-**start()** Start animating
-**stop()** Stop animating
-**setProgress(num)** Update the display with the current progress
-**remove()** Stop animating, and remove DotProgress from the DOM
+**start()**
+Start animating
+
+**stop()**
+Stop animating
+
+**setProgress(num)**
+Update the display with the current progress
+
+**remove()**
+Stop animating, and remove DotProgress from the DOM
 
 
 ## Options
@@ -50,22 +57,22 @@ DotProgress is a simple and somewhat hypnotic progress indicator. It's 2.2 kb 
 There are several options that you can pass in to the constructor:
 
 	var options = {
-  	inactiveDisplay: 'X',
-  	activeDisplay: 'O',
-  	width: 150,
-  	height: 150,
-  	spacing: 10,
-  	rows: 5,
-  	columns: 5,
-  	depth: 5,
-  	xRotVel: 0.015,
-  	yRotVel: 0.021,
-  	zRotVel: 0,
-  	transitionVel: 1,
-  	shuffle: true
-  };
-  var elm = document.getElementById('dot-holder');
-  var dots = new dotProgress.DotProgress(elm, options);
+		inactiveDisplay: 'X',
+		activeDisplay: 'O',
+		width: 150,
+		height: 150,
+		spacing: 10,
+		rows: 5,
+		columns: 5,
+		depth: 5,
+		xRotVel: 0.015,
+		yRotVel: 0.021,
+		zRotVel: 0,
+		transitionVel: 1,
+		shuffle: true
+	};
+	var elm = document.getElementById('dot-holder');
+	var dots = new dotProgress.DotProgress(elm, options);
 
 **inactiveDisplay**
 [String]
