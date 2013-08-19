@@ -8,7 +8,7 @@ dotProgress.DotProgress = function(elm, customOptions) {
 	options.halfHeight = Math.round((options.height - options.spacing) / 2);
 
 	var field = new dotProgress.Field3d();
-	var dotController = new dotProgress.DotController(window, field, options, shuffle);
+	var dotController = new dotProgress.DotController(window, field, options, dotProgress.shuffle);
 	var fieldView = new dotProgress.FieldView(window, document, field, options);
 	elm.appendChild(fieldView.div);
 

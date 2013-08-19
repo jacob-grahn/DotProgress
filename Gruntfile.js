@@ -62,7 +62,7 @@ module.exports = function (grunt) {
 							mountFolder(connect, 'test')
 						];
 					},
-					port: 8999
+					port: 9000
 				}
 			},
 			dist: {

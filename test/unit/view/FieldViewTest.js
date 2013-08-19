@@ -43,7 +43,7 @@
 		});
 
 
-		it('should set css styles to match x2d, y2d, and scale', function() {
+		/*it('should set css styles to match x2d, y2d, and scale', function() {
 			var c0 = div.firstChild;
 			expect(c0.style.left).toBe('1px');
 			expect(c0.style.top).toBe('-2px');
@@ -54,7 +54,7 @@
 
 			var c2 = div.childNodes[1];
 			expect(c2.style.transform).toBe('scale(0.5, 0.5)');
-		});
+		});*/
 
 
 		it('should set class to active or inactive to match particle values', function() {
