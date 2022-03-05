@@ -1,7 +1,4 @@
-var dotProgress = dotProgress || {};
-dotProgress.Field3d = function() {
-
-	'use strict';
+export default function() {
 
 	return({
 		fov: 600,
@@ -10,6 +7,6 @@ dotProgress.Field3d = function() {
 		zRotation: 0,
 		particles: [],
 		active: true
-	});
+	})
 
-};
+}

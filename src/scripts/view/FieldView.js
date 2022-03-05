@@ -1,89 +1,82 @@
-var dotProgress = dotProgress || {};
-dotProgress.FieldView = function(window, document, model, options) {
+import PointView from './PointView.js'
 
-	var dots = [];
-	var animationCallbackId;
-	var div = document.createElement('div');
-	div.className = 'dot-field';
-	div.style.position = 'relative';
-	div.style.width = options.width + 'px';
-	div.style.height = options.height + 'px';
+export default class FieldView {
+
+	constructor(window, document, model, options) {
+		this.window = window
+		this.document = document
+		this.model = model
+		this.options = options
+		this.dots = []
+		this.div = document.createElement('div')
+		this.div.className = 'dot-field'
+		this.div.style.position = 'relative'
+		this.div.style.width = options.width + 'px'
+		this.div.style.height = options.height + 'px'
+	}
 
 
-	var render = function() {
-		if(model.active) {
-			createDotsIfNeeded();
-			removeDotsIfNeeded();
-			positionDots();
+	render() {
+		if(this.model.active) {
+			this.createDotsIfNeeded()
+			this.removeDotsIfNeeded()
+			this.positionDots()
 		}
-	};
+	}
 
 
-	var animationFrameCallback = function() {
-		animationCallbackId = window.requestAnimationFrame(animationFrameCallback);
-		render();
-	};
+	animationFrameCallback = () => {
+		this.animationCallbackId = window.requestAnimationFrame(this.animationFrameCallback)
+		this.render()
+	}
 
 
-	var createDotsIfNeeded = function() {
-		var particleLen = model.particles.length;
-		var dotLen = dots.length;
+	createDotsIfNeeded () {
+		var particleLen = this.model.particles.length
+		var dotLen = this.dots.length
 		while(dotLen < particleLen) {
-			var dot = new dotProgress.PointView(document, options);
-			div.appendChild(dot.div);
-			dots.push(dot);
-			dotLen++;
+			var dot = new PointView(this.document, this.options)
+			this.div.appendChild(dot.div)
+			this.dots.push(dot)
+			dotLen++
 		}
-	};
+	}
 
 
-	var removeDotsIfNeeded = function() {
-		var particleLen = model.particles.length;
-		while(dots.length > particleLen) {
-			var dot = dots.pop();
-			div.removeChild(dot.div);
+	removeDotsIfNeeded () {
+		var particleLen = this.model.particles.length
+		while(this.dots.length > particleLen) {
+			var dot = this.dots.pop()
+			this.div.removeChild(dot.div)
 		}
-	};
+	}
 
 
-	var positionDots = function() {
-		var particleCount = model.particles.length;
+	positionDots () {
+		var particleCount = this.model.particles.length
 		for(var i=0; i<particleCount; i++) {
-			var particle = model.particles[i];
-			var dot = dots[i];
-			dot.setPosition(particle.x2d, particle.y2d, particle.scale, particle.active);
+			var particle = this.model.particles[i]
+			var dot = this.dots[i]
+			dot.setPosition(particle.x2d, particle.y2d, particle.scale, particle.active)
 		}
-	};
+	}
 
 
-	var start = function() {
-		animationFrameCallback();
-	};
+	start () {
+		this.animationFrameCallback()
+	}
 
 
-	var stop = function() {
-		window.cancelAnimationFrame(animationCallbackId);
-	};
+	stop () {
+		this.window.cancelAnimationFrame(this.animationCallbackId)
+	}
 
 
-	var remove = function() {
-		while (div.lastChild) {
-			div.removeChild(div.lastChild);
+	remove () {
+		while (this.div.lastChild) {
+			this.div.removeChild(this.div.lastChild)
 		}
-		div = null;
-		dots = null;
-	};
-
-
-	start();
-
-
-	return({
-		div: div,
-		start: start,
-		stop: stop,
-		render: render,
-		remove: remove
-	});
-
-};
+		this.div = null
+		this.dots = null
+	}
+}

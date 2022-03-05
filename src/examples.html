@@ -2,26 +2,8 @@
 <html>
 <head>
 	<title>DotProgress</title>
-
-	<!-- build:css styles/dot.css -->
 	<link rel="stylesheet" type="text/css" href="styles/dot.css">
-	<!-- endbuild -->
-
-	<!-- build:js scripts/dotProgress.js -->
-	<script src="scripts/animationFramePolyfill.js"></script>
-
-	<script src="scripts/controller/DotController.js"></script>
-
-	<script src="scripts/model/DefaultOptions.js"></script>
-	<script src="scripts/model/Field3d.js"></script>
-	<script src="scripts/model/Point3d.js"></script>
-
-	<script src="scripts/view/FieldView.js"></script>
-	<script src="scripts/view/PointView.js"></script>
-
-	<script src="scripts/DotProgress.js"></script>
-	<script src="scripts/utils.js"></script>
-	<!-- endbuild -->
+	<script src="scripts/DotProgress.js" type="module"></script>
 </head>
 
 
@@ -44,72 +26,75 @@
 
 	<script>
 
-		//--- default
-		var options1 = {};
-		var elm1 = document.getElementById('dot-holder-1');
-		var dots1 = new dotProgress.DotProgress(elm1, options1);
+		window.onload = function() {
+
+			//--- default
+			var options1 = {}
+			var elm1 = document.getElementById('dot-holder-1')
+			var dots1 = new DotProgress(elm1, options1)
 
 
-		//--- css squares
-		var options2 = {
-			rows: 5,
-			columns: 5,
-			depth: 5,
-			spacing: 6,
-			width: 90,
-			height: 90,
-			activeDisplay: '',
-			inactiveDisplay: ''
-		};
-		var elm2 = document.getElementById('dot-holder-2');
-		var dots2 = new dotProgress.DotProgress(elm2, options2);
-
-
-		//--- css images
-		var options3 = {
-			rows: 10,
-			columns: 10,
-			depth: 10,
-			spacing: 10,
-			width: 200,
-			height: 200,
-			activeDisplay: '',
-			inactiveDisplay: '',
-			xRotVel: 0.00702,
-			yRotVel: 0.0113,
-			shuffle: false
-		};
-		var elm3 = document.getElementById('dot-holder-3');
-		var dots3 = new dotProgress.DotProgress(elm3, options3);
-
-
-		//--- exclamation line
-		var options4 = {
-			rows: 1,
-			columns: 10,
-			depth: 0,
-			activeDisplay: '!',
-			inactiveDisplay: '.',
-			xRotVel: 0,
-			shuffle: false
-		}
-		var elm4 = document.getElementById('dot-holder-4');
-		var dots4 = new dotProgress.DotProgress(elm4, options4);
-
-
-		//--- mock progress
-		var progress = 0;
-		function incProgress() {
-			progress += .01;
-			if(progress > 1) {
-				progress = 0;
+			//--- css squares
+			var options2 = {
+				rows: 5,
+				columns: 5,
+				depth: 5,
+				spacing: 6,
+				width: 90,
+				height: 90,
+				activeDisplay: '',
+				inactiveDisplay: ''
 			}
-			dots1.setProgress(progress);
-			dots2.setProgress(progress);
-			dots3.setProgress(progress);
-			dots4.setProgress(progress);
+			var elm2 = document.getElementById('dot-holder-2')
+			var dots2 = new DotProgress(elm2, options2)
+
+
+			//--- css images
+			var options3 = {
+				rows: 10,
+				columns: 10,
+				depth: 10,
+				spacing: 10,
+				width: 200,
+				height: 200,
+				activeDisplay: '',
+				inactiveDisplay: '',
+				xRotVel: 0.00702,
+				yRotVel: 0.0113,
+				shuffle: false
+			}
+			var elm3 = document.getElementById('dot-holder-3')
+			var dots3 = new DotProgress(elm3, options3)
+
+
+			//--- exclamation line
+			var options4 = {
+				rows: 1,
+				columns: 10,
+				depth: 0,
+				activeDisplay: '!',
+				inactiveDisplay: '.',
+				xRotVel: 0,
+				shuffle: false
+			}
+			var elm4 = document.getElementById('dot-holder-4')
+			var dots4 = new DotProgress(elm4, options4)
+
+
+			//--- mock progress
+			var progress = 0
+			function incProgress() {
+				progress += .01
+				if(progress > 1) {
+					progress = 0
+				}
+				dots1.setProgress(progress)
+				dots2.setProgress(progress)
+				dots3.setProgress(progress)
+				dots4.setProgress(progress)
+			}
+			setInterval(incProgress, 250)
 		}
-		setInterval(incProgress, 250);
 
 	</script>
 
