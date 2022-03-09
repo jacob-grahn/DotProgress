@@ -1,5 +1,4 @@
-var dotProgress = dotProgress || {};
-dotProgress.defaultOptions = {
+export default {
 	inactiveDisplay: 'X',
 	activeDisplay: 'O',
 	width: 150,
@@ -13,4 +12,4 @@ dotProgress.defaultOptions = {
 	zRotVel: 0,
 	transitionVel: 1,
 	shuffle: true
-};
+}

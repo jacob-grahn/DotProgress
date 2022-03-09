@@ -1,33 +1,49 @@
-/* global shuffle */
+import { applyObjectDefaults } from './utils.js'
+import defaultOptions from './model/DefaultOptions'
+import Field3D from './model/Field3D'
+import DotController from './controller/DotController'
+import FieldView from './view/FieldView'
 
-var dotProgress = dotProgress || {};
-dotProgress.DotProgress = function(elm, customOptions) {
+class DotProgress {
+	
+	constructor(elm, customOptions) {
+		var options = applyObjectDefaults(customOptions, defaultOptions)
+		options.halfWidth = Math.round((options.width - options.spacing) / 2)
+		options.halfHeight = Math.round((options.height - options.spacing) / 2)
 
-	var options = dotProgress.applyObjectDefaults(customOptions, dotProgress.defaultOptions);
-	options.halfWidth = Math.round((options.width - options.spacing) / 2);
-	options.halfHeight = Math.round((options.height - options.spacing) / 2);
+		var field = new Field3D()
+		this.dotController = new DotController(window, field, options)
+		this.fieldView = new FieldView(window, document, field, options)
 
-	var field = new dotProgress.Field3d();
-	var dotController = new dotProgress.DotController(window, field, options, dotProgress.shuffle);
-	var fieldView = new dotProgress.FieldView(window, document, field, options);
-	elm.appendChild(fieldView.div);
+		elm.appendChild(this.fieldView.div)
+
+		this.start()
+	}
+
+	start () {
+		this.dotController.start()
+		this.fieldView.start()
+	}
+
+	stop () {
+		this.dotController.stop()
+		this.fieldView.stop()
+	}
+
+	setProgress (num) {
+		this.dotController.setProgress(num)
+	}
+
+	remove () {
+		this.dotController.remove()
+		this.dotController = null
+
+		this.fieldView.remove()
+		this.fieldView = null
+
+		this.field = null
+	}
+}
 
 
-	var remove = function() {
-		dotController.remove();
-		dotController = null;
-
-		fieldView.remove();
-		fieldView = null;
-
-		field = null;
-	};
-
-
-	return({
-		start: dotController.start,
-		stop: dotController.stop,
-		setProgress: dotController.setProgress,
-		remove: remove
-	});
-};
+window.DotProgress = DotProgress

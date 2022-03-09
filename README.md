@@ -5,11 +5,11 @@ DotProgress is a simple and somewhat hypnotic progress indicator. It's 2.2 kb 
 ## Simple Example
 
 	//create a DotProgress instance
-	var elm = document.getElementById('dot-holder');
-	var dots = new dotProgress.DotProgress(elm);
+	var elm = document.getElementById('dot-holder')
+	var dots = new DotProgress(elm)
 
 	//set progress as things load
-	dots.setProgress(.5);
+	dots.setProgress(.5)
 
 
 ## Using images
@@ -18,22 +18,22 @@ DotProgress is a simple and somewhat hypnotic progress indicator. It's 2.2 kb 
 	var options = {
 		activeDisplay: '',
 		inactiveDisplay: '',
-	};
-	var elm = document.getElementById('dot-holder');
-	var dots = new dotProgress.DotProgress(elm, options);
-	dots.setProgress(.5);
+	}
+	var elm = document.getElementById('dot-holder')
+	var dots = new DotProgress(elm, options)
+	dots.setProgress(.5)
 
 	//css
 	.dot-inactive {
-		background: url('/img/dot-sprite.png');
-		width: 12px;
-		height: 12px;
+		background: url('/img/dot-sprite.png')
+		width: 12px
+		height: 12px
 	}
 
 	.dot-active {
-		background: url('/img/dot-sprite.png') -12px 0px;
-		width: 12px;
-		height: 12px;
+		background: url('/img/dot-sprite.png') -12px 0px
+		width: 12px
+		height: 12px
 	}
 
 
@@ -70,9 +70,9 @@ There are several options that you can pass in to the constructor:
 		zRotVel: 0,
 		transitionVel: 1,
 		shuffle: true
-	};
-	var elm = document.getElementById('dot-holder');
-	var dots = new dotProgress.DotProgress(elm, options);
+	}
+	var elm = document.getElementById('dot-holder')
+	var dots = new DotProgress(elm, options)
 
 **inactiveDisplay**
 [String]
